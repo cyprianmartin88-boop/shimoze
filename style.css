@@ -1,0 +1,714 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+header {
+    background: #fff;
+    padding: 20px 10%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2d3436;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+
+.btn-contact {
+    background: #0984e3;
+    color: #fff !important;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('head.jpg.PNG');
+    background-size: cover;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn-main {
+    background: #00cec9;
+    color: #fff;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 10%;
+    background: #fff;
+}
+
+.feature-box {
+    text-align: center;
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.feature-box:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #2d3436;
+    color: #fff;
+}/* Styling ya Sehemu Mpya ya Mfumo */
+.container-mfumo {
+    width: 100%;
+    overflow: hidden;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Inagawa kioo mara mbili */
+}
+
+.box-text {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dark-section {
+    background-color: #232931; /* Rangi ya giza kama kwenye picha */
+    color: #ffffff;
+}
+
+.dark-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.dark-section p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.box-image {
+    padding: 0;
+}
+
+.box-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Inafanya picha ijae box zima */
+    display: block;
+}
+
+/* Inafanya ionekane vizuri kwenye simu */
+@media (max-width: 800px) {
+    .grid-layout {
+        grid-template-columns: 1fr; /* Inakuwa mstari mmoja kwenye simu */
+    }
+}/* SEHEMU YA PRICING (GHARAMA) */
+.section-bei {
+    /* Hii ndio kodi ya rangi ya gradient kama ya kwenye picha yako */
+    background: linear-gradient(135deg, #a4508b 0%, #5f0a87 100%);
+    
+    padding: 80px 5%;
+    text-align: center;
+    color: white; /* Inafanya maandishi ya kichwa yawe meupe yajionyeshe vizuri */
+}
+
+.header-bei h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.header-bei p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.kadi-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.kadi {
+    background: white;
+    color: #333;
+    width: 320px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.bei-tag {
+    background: #f1f1f1;
+    padding: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    margin-bottom: 20px;
+}
+
+.bei-tag span { font-size: 14px; font-weight: bold; }
+.bei-tag h3 { font-size: 28px; margin: 5px 0; color: #5f0a87; }
+.bei-tag p { font-size: 12px; font-weight: bold; color: #777; }
+
+.tag-orange h3 { color: #ff6b00 !important; }
+
+.kadi-body h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.kadi-body ul {
+    list-style: none;
+    padding: 0 20px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.kadi-body ul li {
+    font-size: 13px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.kadi-body ul li::before {
+    content: "●";
+    color: #ff6b00;
+    position: absolute;
+    left: 0;
+}
+
+.btn-piga {
+    display: inline-block;
+    background: #2d3436;
+    color: white;
+    padding: 12px 40px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-orange { background: #ff6b00; }
+
+.btn-piga:hover { transform: scale(1.05); }
+
+/* Inafanya iwe nzuri kwenye simu */
+@media (max-width: 768px) {
+    .kadi { width: 100%; }
+}/* Kitufe kinachoelea */
+.ai-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; /* Upande wa kulia */
+    width: 70px;
+    height: 70px;
+    background-color: #5f0a87; /* Rangi ya zambarau kufanana na bei */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.ai-logo-img {
+    width: 80%; /* Logo yako itakaa hapa */
+    border-radius: 50%;
+}
+
+.ai-tooltip {
+    visibility: hidden;
+    position: absolute;
+    right: 80px;
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.ai-float:hover .ai-tooltip { visibility: visible; }
+
+/* Box la Chat */
+.chat-popup {
+    display: none; /* Inafichwa mwanzoni */
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.chat-header {
+    background: #5f0a87;
+    color: white;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+}/* DESIGN YA FAIDA ZA MFUMO */
+.faida-section {
+    padding: 60px 10%;
+    background-color: #f8f9fa; /* Rangi hafifu ya kijivu kama picha yako */
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.faida-header h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.faida-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Inagawa sehemu 3 */
+    gap: 0; /* Tunatumia border badala ya gap */
+}
+
+.faida-item {
+    padding: 30px;
+    text-align: left;
+}
+
+.faida-item h3 {
+    color: #e67e22; /* Rangi ya machungwa kama picha yako */
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.faida-item p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* Mistari ya pembeni (Borders) */
+.border-left {
+    border-left: 1px solid #ccc;
+}
+
+/* Mpangilio wa safu ya pili kukaa katikati */
+.grid-center {
+    grid-column: span 1;
+    margin-top: 20px;
+}
+
+/* Inafanya iwe nzuri kwenye simu */
+@media (max-width: 768px) {
+    .faida-grid {
+        grid-template-columns: 1fr; /* Inakuwa mstari mmoja kwenye simu */
+    }
+    .border-left {
+        border-left: none;
+        border-top: 1px solid #ccc;
+        margin-top: 20px;
+    }
+}/* DESIGN YA GALARI NA GRADIENT BACKGROUND */
+.gallery-section {
+    padding: 80px 10%;
+    /* Rangi ya Dark Yellow (Dhahabu iliyofifia) na Black Gradient */
+    background: linear-gradient(135deg, #1a1a1a 0%, #8b6b02 100%); 
+    text-align: center;
+    color: white;
+}
+
+.gallery-header h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.gallery-header p {
+    font-size: 14px;
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+
+/* Filter Buttons */
+.gallery-filters {
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 8px 25px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background: #ffcc00; /* Yellow imara */
+    color: black;
+    border-color: #ffcc00;
+}
+
+/* Mpangilio wa Picha (Grid) */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    transition: transform 0.3s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Inafanya picha ijae vizuri */
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Picha inakua kidogo ukigusa */
+}
+
+/* Mobile Friendly */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr; /* Picha mbili mbili kwenye simu */
+    }
+}/* Mpangilio wa Galari */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Inatengeneza safu 4 horizontal */
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.gallery-item {
+    position: relative;
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: block;
+    transition: transform 0.3s;
+}
+
+/* Icon ya Instagram na Giza juu ya picha (Hover) */
+.insta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Giza kidogo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Inafichwa kwanza */
+    transition: 0.3s ease;
+    z-index: 2;
+}
+
+.insta-overlay i {
+    color: #fff;
+    font-size: 40px;
+}
+
+.gallery-item:hover .insta-overlay {
+    opacity: 1; /* Icon inatokea ukigusa picha */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Picha inakua kidogo */
+}
+
+/* Inafanya iwe picha 2 kwa kila safu kwenye simu */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}/* Urembo wa Sehemu ya Galari */
+.gallery-section {
+    padding: 60px 10%;
+    /* Gradient: Nyeusi na Njano ya Giza */
+    background: linear-gradient(135deg, #000000 0%, #8b6b02 100%);
+    color: white;
+    text-align: center;
+}
+
+.gallery-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+/* Hii inatengeneza fremu nzuri kwa ajili ya Widget yako */
+.instagram-feed-wrapper {
+    background: rgba(255, 255, 255, 0.05); /* Mwanga hafifu wa background */
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 204, 0, 0.3); /* Mstari mwekundu wa dhahabu */
+    margin-top: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Inahakikisha iframe inakaa sawa kwenye simu na PC */
+.lightwidget-widget {
+    width: 100% !important;
+}/* Container ya bei yenye Background ya Purple kama picha yako */
+.section-bei {
+    background-color: #7a288a; /* Rangi ya zambarau */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.kadi-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Muonekano wa Kadi Nyeupe */
+.kadi-mpya {
+    background: #ffffff;
+    width: 350px;
+    border-radius: 25px; /* Kona za duara zaidi */
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    font-family: 'Arial', sans-serif;
+}
+
+.kadi-top {
+    padding: 30px 10px;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+.kadi-top .currency { color: #666; font-weight: bold; }
+.kadi-top .price { color: #f37021; font-size: 35px; margin: 5px 0; }
+.kadi-top .subtitle { color: #888; letter-spacing: 1px; font-size: 14px; }
+
+.kadi-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.kadi-content h4 { color: #333; text-align: center; margin-bottom: 20px; }
+
+.kadi-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.kadi-content ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    color: #444;
+    line-height: 1.4;
+}
+
+/* Alama ya kitone (Dot) ya rangi ya machungwa */
+.kadi-content ul li::before {
+    content: "•";
+    color: #f37021;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+}
+
+/* Staili ya Picha ndani ya Kadi */
+.kadi-image {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.kadi-image img {
+    width: 100%;
+    display: block;
+    transition: 0.3s;
+}
+
+/* Kitufe cha Piga Simu */
+.btn-piga-mpya {
+    display: block;
+    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4);
+}.section-bei {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('rangi1.jpg.jfif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Hii inafanya background isitembee unapo-scroll */
+    padding: 80px 5%;
+    text-align: center;
+    color: white;
+}
+
+.kadi-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.kadi-mpya {
+    background: #fff;
+    width: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+/* Kadi ya katikati iwe kubwa kidogo */
+.kadi-mpya.highlight {
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+.kadi-top {
+    padding: 20px;
+    background: #f8f8f8;
+    position: relative;
+}
+
+.orange-top {
+    background: #ff7e5f;
+}
+
+.white-text { color: white !important; }
+
+.kadi-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.kadi-content ul {
+    list-style: none;
+    padding: 0;
+    min-height: 150px; /* Inafanya kadi ziwe na urefu sawa */
+}
+
+.kadi-content li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.kadi-content li::before {
+    content: "•";
+    color: #ff7e5f;
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+}
+
+.kadi-image {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.kadi-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-piga-mpya {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.btn-piga-mpya.grey { background: #333; }
+.btn-piga-mpya.orange { background: linear-gradient(to right, #ff7e5f, #feb47b); }
